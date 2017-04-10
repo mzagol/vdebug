@@ -61,8 +61,8 @@ class Ui(vdebug.ui.interface.Ui):
 
             self.tracewin = TraceWindow(self,'rightbelow 7new')
 
-            self.watchwin.set_height(20)
-            self.statuswin.set_height(5)
+            self.watchwin.set_height(vdebug.opts.Options.get('watch_window_height'))
+            self.statuswin.set_height(vdebug.opts.Options.get('status_window_height'))
 
             logwin = LogWindow(self,'rightbelow 6new')
 
